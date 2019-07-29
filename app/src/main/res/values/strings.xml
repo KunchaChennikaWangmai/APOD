@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ChenProject</string>
+    <string-array name="options">
+        <item>Asteroids</item>
+        <item>Astronomy Picture of the Day(APOD)</item>
+        <item>Previous APODs</item>
+    </string-array>
+</resources>

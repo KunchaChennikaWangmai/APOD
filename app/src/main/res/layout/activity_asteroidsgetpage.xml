@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Asteroidsgetpage">
+    <include layout="@layout/toolbar"
+        android:id="@+id/tool1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/testagp"
+        android:layout_below="@+id/tool1"
+        android:text="Since there are a lot of asteroids,enter a page number from 0 to 1000 to view the list of asteroids in that particular page"
+       android:textColor="@color/grey" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/page"
+        android:layout_below="@+id/testagp"
+        android:textColor="@color/grey"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/page"
+        android:id="@+id/aster"
+        />
+
+</RelativeLayout>

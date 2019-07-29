@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/nasa6">
+    <include layout="@layout/toolbar"
+        android:id="@+id/tool"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Explore the space!"
+        android:textColor="@color/cardview_light_background"
+        android:layout_below="@+id/tool"
+        android:id="@+id/textone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Made with the help of Nasa's Api"
+        android:textColor="@color/cardview_dark_background"
+        android:id="@+id/textwo"
+        android:layout_below="@+id/textone"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/mainlist"
+        android:theme="@style/TextAppearance.AppCompat"
+        android:layout_below="@+id/textwo"/>
+
+</RelativeLayout>
